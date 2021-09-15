@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsl(0, 0%, 81%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+#container {
+  padding: 5% 3%;
+}
+#card-1 {
+  background-color: hsl(263, 55%, 52%);
+  color: #ffffff;
+  position: relative;
+  z-index: 0;
+}
+#card-2 {
+  background-color: hsl(217, 19%, 35%);
+  color: #ffffff;
+}
+#card-3,
+#card-5 {
+  background-color: hsl(0, 0%, 100%);
+  color: #676f7a;
+}
+#card-4 {
+  background-color: hsl(219, 29%, 14%);
+  color: #ffffff;
+}
+.card-items {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  font-size: 13px;
+}
+.card-items h4 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.card-items p {
+  opacity: 70%;
+}
+.header .name {
+  opacity: 100%;
+  font-size: 1rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  z-index: 3;
+}
+.header img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.profile_img {
+  border: 2px solid hsl(263, 55%, 62%);
+}
+#quotation {
+  position: absolute;
+  right: 15%;
+  top: 0;
+  z-index: 1;
+}
+@media (min-width: 576px) {
+  #container,
+  #main-left,
+  #top,
+  #bottom {
+    display: flex;
+  }
+  #top,
+  #bottom {
+    flex-basis: 50%;
+  }
+  #card-1,
+  #card-4 {
+    flex-basis: 65%;
+  }
+  #card-2,
+  #card-3 {
+    flex-basis: 35%;
+  }
+  #container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  #card-5 {
+    flex-basis: 25%;
+  }
+  #main-left {
+    flex-direction: column;
+    flex-basis: 75%;
+  }
+  #main-left .card-items {
+    margin-right: 15px;
+  }
+}
